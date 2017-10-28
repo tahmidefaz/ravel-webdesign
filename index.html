@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sentiment Analysis on Tweets and Text file">
+    <meta name="author" content="Tahmid Efaz">
+    <title>Sentiment Analysis on Tweets or File</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/4ccf9a6ce5.js"></script>
+    <link rel="icon" href="/static/logo.png" >
 
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <link href="custom.css" rel="stylesheet">
+    <!-- Script for file upload -->
+    <script>
+    function changeText()
+      {
+      document.getElementById('upload_span').innerHTML = 'File Seclected';
+      }
+    </script>
+    <style>
+      .file-upload {
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+      }
+      .file-upload input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+    </style>
+
+    <!-- Script for loading -->
+    <script type="text/javascript">// <![CDATA[
+        function loading(){
+            $("#loading").show();
+            $("#content").hide();
+        }
+// ]]></script>
+      <!-- loading style -->
+      <style>
+        div#loading {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            top: 50%;
+            left: 50%;
+            display: none;
+            background: url(/static/loading.gif) no-repeat;
+            cursor: wait;
+            }
+    </style>
+
+</head>
+<body>
+<h1 id="title"><b>Ravel.</b></h1>
+<div style="position:absolute;top:45%;left:40%;">
+  <a class='dropdown-button btn' href='#' data-activates='dropdown1'><i class="material-icons right">keyboard_arrow_down</i>Analyze Sentiment</a>
+</div>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!"><i class="material-icons">text_fields</i>Analyze Text</a></li>
+    <li><a href="#!"><i class="fa fa-twitter fa-lg"></i>Analyze Tweets</a></li>
+    <li><a href="#!"><i class="material-icons">insert_drive_file</i>Analyze File</a></li>
+  </ul>
+
+</body>
+</html>
