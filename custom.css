@@ -1,17 +1,10 @@
+
 h1#title{
   font-family:'Josefin Sans', sans-serif;
-  position: absolute;
-  top:25%;
-  left:40%;
-  font-size:555%;
+  font-size:80px;
   letter-spacing: 4px;
-  background: #00BCD4;
   background: -webkit-linear-gradient(135deg, #69F0AE, #00BCD4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-},
-
-a{
-  background-color: #FFFFFF;
-  color: #000000;
 }
+
